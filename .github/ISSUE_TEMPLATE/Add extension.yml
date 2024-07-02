@@ -2,8 +2,8 @@ name: Add Extension
 description: Submit a request to add an extension to the repository
 title: "[Ext]: "
 labels: ["extension", "request"]
-assignees:
-  - paalaas
+#assignees:
+#  - paalaas
 body:
   - type: markdown
     attributes:

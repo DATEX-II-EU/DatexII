@@ -2,8 +2,8 @@ name: Add Profile
 description: Submit a request to add a profile to the repository
 title: "[Ext]: "
 labels: ["extension", "request"]
-assignees:
-  - paalaas
+#assignees:
+#  - paalaas
 body:
   - type: markdown
     attributes:
