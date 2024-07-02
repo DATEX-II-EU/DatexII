@@ -1,0 +1,162 @@
+name: Add Profile
+description: Submit a request to add a profile to the repository
+title: "[Ext]: "
+labels: ["extension", "request"]
+assignees:
+  - paalaas
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your profile
+  - type: input
+    id: contactName
+    attributes:
+      label: Contact Name
+      description: Contact Person Name?
+      placeholder: 
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact e-mail address
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      description: Name of organization?
+      placeholder: 
+    validations:
+      required: false
+  - type: input
+    id: organizationDescription
+    attributes:
+      label: Organization description
+      description: Describe shortly your organization?
+      placeholder: 
+    validations:
+      required: false
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: 
+      placeholder: 
+    validations:
+      required: false
+  - type: dropdown
+    id: country
+    attributes:
+      label: Country / Region
+      description: Which country is the profile associated with
+      options:
+        - ''
+        - Albania (AL)
+        - Andorra (AD)
+        - Armenia (AM)
+        - Austria (AT)
+        - Azerbaijan (AZ)
+        - Belarus (BY)
+        - Belgium (BE)
+        - Bosnia and Herzegovina (BA)
+        - Bulgaria (BG)
+        - Croatia (HR)
+        - Cyprus (CY)
+        - Czech Republic (CZ)
+        - Denmark (DK)
+        - Estonia (EE)
+        - Finland (FI)
+        - France (FR)
+        - Georgia (GE)
+        - Germany (DE)
+        - Greece (GR)
+        - Hungary (HU)
+        - Iceland (IS)
+        - Ireland (IE)
+        - Italy (IT)
+        - Kazakhstan (KZ)
+        - Kosovo (XK)
+        - Latvia (LV)
+        - Liechtenstein (LI)
+        - Lithuania (LT)
+        - Luxembourg (LU)
+        - Malta (MT)
+        - Moldova (MD)
+        - Monaco (MC)
+        - Montenegro (ME)
+        - Netherlands (NL)
+        - North Macedonia (MK)
+        - Norway (NO)
+        - Poland (PL)
+        - Portugal (PT)
+        - Romania (RO)
+        - San Marino (SM)
+        - Serbia (RS)
+        - Slovakia (SK)
+        - Slovenia (SI)
+        - Spain (ES)
+        - Sweden (SE)
+        - Switzerland (CH)
+        - Turkey (TR)
+        - Ukraine (UA)
+        - United Kingdom (GB)
+        - Vatican City (VA)
+    validations:
+      required: true
+  - type: textarea
+    id: eaFile
+    attributes:
+      label: EA Model file
+      description: Upload a zip file containg the EA model file!
+      placeholder: Upload a zip file containg the EA model file!
+    validations:
+      required: true
+  - type: textarea
+    id: xmiFile
+    attributes:
+      label: XMI Model file
+      description: Upload a zip file containg the XMI file!
+      placeholder: Upload a zip file containg the XMI file!
+    validations:
+      required: false
+  - type: textarea
+    id: xmlSchema
+    attributes:
+      label: XML schema files
+      description: Upload a zip file containg the XML schemas!
+      placeholder: Upload a zip file containg the XML schemas!
+    validations:
+      required: false
+  - type: textarea
+    id: documentation
+    attributes:
+      label: PDF documentation
+      description: Upload a PDF file containg documentation!
+      placeholder: Upload a PDF file containg documentation!
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of DATEX?
+      options:
+        - 2
+        - 3
+        - 4
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Disclaimer
+      description: By submitting this form, you agree that the data supplied can be published on the internet.
+      options:
+        - label: I agree to publish this data
+          required: true
