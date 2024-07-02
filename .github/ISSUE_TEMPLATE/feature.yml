@@ -9,21 +9,13 @@ body:
     attributes:
       value: |
         Thanks for contributing!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: feature
     attributes:
       label: Feature description
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      description: Tell us the feature to enhance DATEX
+      placeholder: Tell us what feature!
+      value: "Feature description"
     validations:
       required: true
   - type: checkboxes
